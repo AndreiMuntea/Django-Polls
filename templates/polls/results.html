@@ -1,0 +1,10 @@
+{% load staticfiles %}
+{% if choices %}
+           <ul>
+    {% for choice in choices%}
+            <li>{{ choice }} has {{  choice.votes }} vot(es)</li>
+    {% endfor %}
+       </ul>
+{% else %}
+           <p>No choices.</p>
+{% endif %}
